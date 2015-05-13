@@ -1,4 +1,4 @@
-.pyc
-.sqlite
-.db
-.idea
+*.pyc
+*.sqlite
+*.db
+.idea/
