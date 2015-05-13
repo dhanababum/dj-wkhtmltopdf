@@ -10,7 +10,7 @@ Requirements:
 -------------
 -------------
     
-    Install the `wkhtmltopdf <http://wkhtmltopdf.org/downloads.html>_ .
+    Install the `wkhtmltopdf <http://wkhtmltopdf.org/downloads.html>`_ .
 
     Python 2.6+ and 3.3+ is supported.
 
