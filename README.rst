@@ -20,9 +20,9 @@ Instalation:
 
     Run ``pip install django-wkhtmltopdf``.
 
-    Add 'djwkhtmltopdf' to ``INSTALLED_APPS`` in your ``settings.py``.
+    Add 'djwkhtmltopdf' to ``INSTALLED_APPS`` in your ``settings.py`` .
 
-    Then run the ``python manage.py syncdb``.
+    Then run the ``python manage.py syncdb`` .
 
     By default it will execute the first wkhtmltopdf command found on your ``PATH``.
 
@@ -30,7 +30,7 @@ Instalation:
 
     e.g. in ``settings.py``:
 
-    ``WKHTML_TO_PDF_CMD = '/path/to/my/wkhtmltopdf'``
+    ``WKHTML_TO_PDF_CMD = '/path/to/my/wkhtmltopdf' ``
 
     You may also set wkhtmltopdf options through django admin or ``WKHTML_OPTIONS`` in settings.py to a dictionary of default command-line options.
 
