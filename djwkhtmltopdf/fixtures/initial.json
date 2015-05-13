@@ -1,0 +1,63 @@
+[
+{
+    "fields": {
+        "name": "basic",
+        "footer": "<!DOCTYPE html>\r\n<title>Page Title</title>\r\n\r\n<h4>This is a kart</h4>\r\n",
+        "margin_right": null,
+        "quiet": true,
+        "page_size": "B6",
+        "zoom": "0",
+        "header": "<html><head><script>\r\nfunction subst() {\r\n  var vars={};\r\n  var x=window.location.search.substring(1).split('&');\r\n  for (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}\r\n  var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];\r\n  for (var i in x) {\r\n    var y = document.getElementsByClassName(x[i]);\r\n    for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];\r\n  }\r\n}\r\n</script></head><body style=\"border:0; margin: 0;\" onload=\"subst()\">\r\n<table style=\"border-bottom: 1px solid black; width: 100%\">\r\n  <tr>\r\n    <td class=\"section\"></td>\r\n    <td style=\"text-align:right\">\r\n      Page <span class=\"page\"></span> of <span class=\"topage\"></span>\r\n    </td>\r\n  </tr>\r\n</table>\r\n</body></html>",
+        "margin_top": "6.45",
+        "margin_left": null,
+        "encode_type": "utf-8",
+        "margin_bottom": null,
+        "css": "",
+        "orientation": "Portrait"
+    },
+    "model": "djwkhtmltopdf.htmlheaderfooter",
+    "pk": 1
+},
+{
+    "fields": {
+        "body": "<!DOCTYPE html>\r\n<title>Page Title</title>\r\n\r\n<h1>Html to Pdf Convertion</h1>\r\n<p>This is a paragraph.</p>\r\n",
+        "name": "One Body"
+    },
+    "model": "djwkhtmltopdf.htmlbody",
+    "pk": 1
+},
+{
+    "fields": {
+        "body": "Page No: {{ page }}",
+        "name": "two body"
+    },
+    "model": "djwkhtmltopdf.htmlbody",
+    "pk": 2
+},
+{
+    "fields": {
+        "attachment": false,
+        "htmlheader": 1,
+        "htmlbody": [
+            1
+        ],
+        "name": "myown",
+        "view": "djwkhtmltopdf.views.home"
+    },
+    "model": "djwkhtmltopdf.html",
+    "pk": 1
+},
+{
+    "fields": {
+        "attachment": false,
+        "htmlheader": 1,
+        "htmlbody": [
+            2
+        ],
+        "name": "second",
+        "view": "djwkhtmltopdf.views.test"
+    },
+    "model": "djwkhtmltopdf.html",
+    "pk": 2
+}
+]
