@@ -4,7 +4,7 @@
 from __future__ import absolute_import
 from setuptools import setup, find_packages
 
-readme = open('README.rst').read()
+readme = open('README.md').read()
 
 setup(
     name='djwkhtmltopdf',

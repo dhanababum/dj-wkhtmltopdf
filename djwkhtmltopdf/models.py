@@ -72,7 +72,8 @@ class PaperSizeFormat(object):
 
 
 class HtmlHeaderFooter(models.Model):
-    """ It is the model for allowing to craete html header, footer and wkhtmltopdf options.
+    """ It is the model for allowing to craete html header, footer and \
+    wkhtmltopdf options.
     """
     LANDSCAPE = 'Landscape'
     PORTRAIT = 'Portrait'
@@ -154,8 +155,13 @@ class Html(models.Model):
         app_label = 'djwkhtmltopdf'
 
     def clean(self):
-        if len(self.name) == 0 and self.name.isspace():
-            raise ValidationError("PDF name should more than two letters.")
+        if len(self.name.strip()) < 2:
+            raise ValidationError("PDF name should more than two letters")
+        check_view_already_added = Html.objects.filter(
+            models.Q(view=self.view) & ~models.Q(pk=self.id))
+        if check_view_already_added:
+            raise ValidationError("This view already \
+                mapped with another object")
 
     def __unicode__(self,):
         return self.name
