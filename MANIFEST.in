@@ -1,2 +1,3 @@
 include README.md
 include LICENCE
+include djwkhtmltopdf/fixtures/*
