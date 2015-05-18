@@ -27,7 +27,7 @@ setup(
     ],
     keywords='wkhtmlpdf,html,pdf,python,django',
     author='Dhana Babu',
-    url='http://github.com/directeur/django-sorting/tree/master',
+    url='https://github.com/dhanababum/dj-wkhtmltopdf',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
