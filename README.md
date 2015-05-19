@@ -12,7 +12,7 @@ Python 2.6+ and 3.3+ is supported.
 Installation:
 ------------
 ------------
-Run ``pip install django-wkhtmltopdf``.
+Run ``pip install dj-wkhtmltopdf``.
 
 Add 'djwkhtmltopdf' to ``INSTALLED_APPS`` in your ``settings.py`` .
 
