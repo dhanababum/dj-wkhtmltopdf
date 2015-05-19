@@ -37,7 +37,7 @@ WKHTML_OPTIONS = {
 Important Note:
 ---------------
 ---------------
-I haven't tested with windows and Mac OS. I am only tested with Ubuntu OS.
+I've tested it only on Ubuntu but haven't tested it on Mac and Windows.
 License:
 --------
 --------
