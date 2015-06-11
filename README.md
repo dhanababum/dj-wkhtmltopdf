@@ -1,3 +1,4 @@
+[![PyPI version](https://badge.fury.io/py/dj-wkhtmltopdf.svg)](http://badge.fury.io/py/dj-wkhtmltopdf)
 dj-wkhtmltopdf
 --------------
 --------------
