@@ -216,7 +216,7 @@ class WKHtmlToPDFGenerator(object):
             for f_to_del in file_to_del:
                 try:
                     os.unlink(f_to_del)
-                except (OSError, IOError), exc:
+                except (OSError, IOError):
                     #  print("cannot remove file %s: %s" % (f_to_del, exc))
                     pass
         return pdf

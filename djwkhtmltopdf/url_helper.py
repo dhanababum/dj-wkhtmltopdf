@@ -71,7 +71,7 @@ def get_all_views():
     try:
         urlconf = __import__(settings.ROOT_URLCONF, {}, {}, [''])
     except Exception as e:
-        print e
+        print(e)
         pass
     view_functions = extract_views_from_urlpatterns(urlconf.urlpatterns)
     for (func, regex, url_name) in view_functions:
