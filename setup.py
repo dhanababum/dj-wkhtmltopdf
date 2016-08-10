@@ -8,7 +8,7 @@ readme = open('README.md').read()
 
 setup(
     name='dj-wkhtmltopdf',
-    version='1.0.2',
+    version='1.0.3',
     description="Converting Html to Pdf using wkhtmltopdf.",
     long_description=readme,
     classifiers=[
